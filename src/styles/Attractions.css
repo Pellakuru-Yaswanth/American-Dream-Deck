@@ -20,12 +20,12 @@
 }
 
 /* Placeholder gradients for logic - Replace with real background images/videos */
-.attractions-bg.nickelodeon { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../assets/attraction-1.png');}
-.attractions-bg.dreamworks { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../assets/attraction-2.png');}
-.attractions-bg.bigsnow { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../assets/attraction-3.png'); }
-.attractions-bg.sealife { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../assets/attraction-4.png'); }
-.attractions-bg.legoland { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../assets/attraction-5.png');}
-.attractions-bg.therink { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../assets/attraction-6.png'); }
+.attractions-bg.nickelodeon { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-1.png');}
+.attractions-bg.dreamworks { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-2.png');}
+.attractions-bg.bigsnow { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-3.png'); }
+.attractions-bg.sealife { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-4.png'); }
+.attractions-bg.legoland { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-5.png');}
+.attractions-bg.therink { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-6.png'); }
 
 .attractions-bg.nickelodeon, .attractions-bg.dreamworks, .attractions-bg.bigsnow, .attractions-bg.sealife, .attractions-bg.legoland, .attractions-bg.therink {
    transition-delay: 1s;

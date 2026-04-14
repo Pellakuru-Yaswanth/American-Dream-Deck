@@ -1,25 +1,22 @@
-import React, { useState, useEffect, useCallback } from 'react'; // Removed 'use'
+import React, { useState, useEffect, useCallback } from 'react'; 
 import '../styles/Hero.css';
-import video1 from '../assets/drone-shot-video.mp4';
-import video2 from '../assets/hero-video.mp4';
-import video3 from '../assets/Avenue_Luxury_Court_Video.mp4';
 
 const videoSlides = [
   {
     id: 1,
-    url: video1,
+    url: '/assets/drone-shot-video.mp4',
     title: "American Dream Exterior",
     subtitle: "AERIAL DRONE CINEMATICS"
   },
   {
     id: 2,
-    url: video2,
+    url: '/assets/hero-video.mp4',
     title: "DreamWorks Water Park",
     subtitle: "LARGEST INDOOR THEME PARK"
   },
   {
     id: 3,
-    url: video3,
+    url: '/assets/Avenue_Luxury_Court_Video.mp4',
     title: "The Avenue & Luxury Court",
     subtitle: "WORLD-CLASS RETAIL EXPERIENCE"
   }
@@ -45,7 +42,7 @@ const Hero = ({ onExplore }) => {
   }, [currentIndex]);
 
   return (
-    <section className="hero-container">
+    <section className="hero-container reveal">
       {/* FIX 1: Render ALL videos inside the slider. 
          The 'translateX' moves this entire long div.
       */}

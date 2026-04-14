@@ -1,19 +1,14 @@
 import React from 'react';
 import '../styles/Luxury.css';
-import brochurePDF from '../assets/brochure.pdf';
-import luxury1 from '../assets/luxury-1.png';
-import luxury2 from '../assets/luxury-2.png';
-import luxury3 from '../assets/luxury-3.png';
-import luxury4 from '../assets/luxury-4.png';
-import luxury_bg from '../assets/luxury-background.png';
+
 const Luxury = ({onLeaseClick}) => {
   const brands = ["HERMÈS", "LOUIS VUITTON", "GUCCI", "SAINT LAURENT", "TIFFANY & CO.", "PRADA", "ROLEX"];
 
   const portfolio = [
-    { title: "The Avenue", img: luxury1 },
-    { title: "A Private Suite at DreamWorks Water Park", img: luxury2 },
-    { title: "The VIP Cinema Experience", img: luxury3 },
-    { title: "Luxury Dining", img: luxury4 },
+    { title: "The Avenue", img: '/assets/luxury-1.png' },
+    { title: "A Private Suite at DreamWorks Water Park", img: '/assets/luxury-2.png' },
+    { title: "The VIP Cinema Experience", img: '/assets/luxury-3.png' },
+    { title: "Luxury Dining", img: '/assets/luxury-4.png' },
   ];
 
   return (
@@ -22,7 +17,7 @@ const Luxury = ({onLeaseClick}) => {
       <div className="luxury-video-bg">
         <div className="video-dimmer"></div>
         <img 
-          src={luxury_bg} 
+          src={'/assets/luxury-background.png'} 
           alt="Luxury Interior" 
           className="parallax-img"
         />
@@ -50,7 +45,7 @@ const Luxury = ({onLeaseClick}) => {
             <a onClick={onLeaseClick} className="luxury-cta-gold">
                REQUEST DOSSIER
             </a>
-            <a href={brochurePDF} download="American Dream User Guide.pdf" className="luxury-cta-gold">
+            <a href={'../../public/assets/brochure.pdf'} download="American Dream User Guide.pdf" className="luxury-cta-gold">
                USER GUIDE
             </a>
           </div>
