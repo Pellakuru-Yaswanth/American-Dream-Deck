@@ -48,7 +48,7 @@
 
 /* Marquee: Elegant & Subtle */
 .luxury-brand-marquee {
-  overflow: hidden;
+  overflow: scroll;
   margin-bottom: 4rem;
   border-top: 1px solid rgba(197, 160, 89, 0.3);
   border-bottom: 1px solid rgba(197, 160, 89, 0.3);
@@ -58,7 +58,7 @@
 .marquee-content {
   display: flex;
   white-space: nowrap;
-  animation: marqueeScroll 40s linear infinite;
+  animation: marqueeScroll 15s linear infinite;
 }
 
 .marquee-item {
@@ -70,8 +70,8 @@
 }
 
 @keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from { transform: translateX(-10%); }
+  to { transform: translateX(-255%); }
 }
 
 /* CTAs */
@@ -149,12 +149,6 @@
   text-transform: uppercase;
   color: var(--gold);
 }
-
-/* Asymmetric Positioning */
-.card-0 { transition-delay: 0.1s;}
-.card-1 { transition-delay: 0.2s;}
-.card-2 { transition-delay: 0.3s;}
-.card-3 { transition-delay: 0.4s;}
 
 .portfolio-card:hover {
   transform: translateY(-20px) scale(1.05);

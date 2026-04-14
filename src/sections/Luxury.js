@@ -45,7 +45,7 @@ const Luxury = ({onLeaseClick}) => {
             <a onClick={onLeaseClick} className="luxury-cta-gold">
                REQUEST DOSSIER
             </a>
-            <a href={'../../public/assets/brochure.pdf'} download="American Dream User Guide.pdf" className="luxury-cta-gold">
+            <a href={'/assets/brochure.pdf'} download="American Dream User Guide.pdf" className="luxury-cta-gold">
                USER GUIDE
             </a>
           </div>

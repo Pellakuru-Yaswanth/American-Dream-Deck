@@ -33,13 +33,16 @@ h1, h2 {
   display: none;
 }
 /* Reveal Animation */
+/* The initial hidden state */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+  will-change: transform, opacity; /* Performance optimization for GPU */
 }
 
-.reveal-active {
+/* The state when the section is in view */
+.reveal.reveal-active {
   opacity: 1;
   transform: translateY(0);
 }
