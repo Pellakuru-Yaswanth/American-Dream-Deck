@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useCallback } from 'react'; 
+import React, { useState, useEffect, useCallback } from 'react';
 import '../styles/Hero.css';
 
 const videoSlides = [
   {
     id: 1,
-    url: '/assets/drone-shot-video.mp4',
+    url: './assets/drone-shot-video.mp4',
     title: "American Dream Exterior",
     subtitle: "AERIAL DRONE CINEMATICS"
   },
@@ -46,14 +46,14 @@ const Hero = ({ onExplore }) => {
       {/* FIX 1: Render ALL videos inside the slider. 
          The 'translateX' moves this entire long div.
       */}
-      <div 
-        className="video-slider" 
+      <div
+        className="video-slider"
       >
-    <div className="video-slide" key={videoSlides[currentIndex].id}>
-      <video autoPlay muted loop playsInline className="hero-video">
-        <source src={videoSlides[currentIndex].url} type="video/mp4" />
-      </video>
-    </div>
+        <div className="video-slide" key={videoSlides[currentIndex].id}>
+          <video autoPlay muted loop playsInline className="hero-video">
+            <source src={videoSlides[currentIndex].url} type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <div className="hero-overlay">
@@ -76,8 +76,8 @@ const Hero = ({ onExplore }) => {
 
       <div className="slide-indicators">
         {videoSlides.map((_, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className={`indicator-dot ${index === currentIndex ? 'active' : ''}`}
             onClick={() => setCurrentIndex(index)}
           ></div>

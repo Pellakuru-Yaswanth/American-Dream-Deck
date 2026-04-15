@@ -9,6 +9,7 @@ const EventsContact = () => {
     interest: '',
     message: ''
   });
+  const [prevFormState, setPrevFormState] = useState(formData); // To store the last submitted state for reset purposes
 
   // 2. State for Submission Status
   const [status, setStatus] = useState('idle'); // idle | loading | success
@@ -26,6 +27,7 @@ const EventsContact = () => {
     setTimeout(() => {
       console.log('Form Submitted:', formData);
       setStatus('success');
+      setPrevFormState(formData); // Store the current form data before resetting
       setFormData({
                 fullName: '',
                 email: '',
@@ -58,7 +60,7 @@ const EventsContact = () => {
             <div className="form-success-message">
               <div className="success-icon">✓</div>
               <h3>Dossier Requested</h3>
-              <p>Thank you, {formData.fullName.split(' ')[0]}. A partnership executive will contact you shortly to discuss your vision.</p>
+              <p>Thank you, {prevFormState.fullName.split(' ')[0]}. A partnership executive will contact you shortly to discuss your vision.</p>
               <button className="reset-btn" onClick={() => setStatus('idle')}>SEND ANOTHER INQUIRY</button>
             </div>
           ) : (
@@ -113,7 +115,7 @@ const EventsContact = () => {
                   className={`submit-btn ${status === 'loading' ? 'loading' : ''}`}
                   disabled={status === 'loading'}
                 >
-                  {status === 'loading' ? 'TRANSMITTING...' : 'SUBMIT INQUIRY'}
+                  {status === 'loading' ? 'SUBMITING...' : 'SUBMIT INQUIRY'}
                 </button>
               </form>
             </>
