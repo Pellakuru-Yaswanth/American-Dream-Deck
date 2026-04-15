@@ -4,7 +4,7 @@ import '../styles/Hero.css';
 const videoSlides = [
   {
     id: 1,
-    url: './assets/drone-shot-video.mp4',
+    url: `${process.env.PUBLIC_URL}/assets/drone-shot-video.mp4`,
     title: "American Dream Exterior",
     subtitle: "AERIAL DRONE CINEMATICS"
   },
