@@ -5,10 +5,10 @@ const Luxury = ({ onLeaseClick }) => {
   const brands = ["HERMÈS", "LOUIS VUITTON", "GUCCI", "SAINT LAURENT", "TIFFANY & CO.", "PRADA", "ROLEX"];
 
   const portfolio = [
-    { title: "The Avenue", img: 'assets/luxury-1.png' },
-    { title: "A Private Suite at DreamWorks Water Park", img: 'assets/luxury-2.png' },
-    { title: "The VIP Cinema Experience", img: 'assets/luxury-3.png' },
-    { title: "Luxury Dining", img: 'assets/luxury-4.png' },
+    { title: "The Avenue", img: `${process.env.PUBLIC_URL}/assets/luxury-1.png` },
+    { title: "A Private Suite at DreamWorks Water Park", img: `${process.env.PUBLIC_URL}/assets/luxury-2.png` },
+    { title: "The VIP Cinema Experience", img: `${process.env.PUBLIC_URL}/assets/luxury-3.png` },
+    { title: "Luxury Dining", img: `${process.env.PUBLIC_URL}/assets/luxury-4.png` },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Luxury = ({ onLeaseClick }) => {
       <div className="luxury-video-bg">
         <div className="video-dimmer"></div>
         <img
-          src={'assets/luxury-background.png'}
+          src={`${process.env.PUBLIC_URL}/assets/luxury-background.png`}
           alt="Luxury Interior"
           className="parallax-img"
         />

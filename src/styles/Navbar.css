@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
   padding: 1.5rem 3rem;
   z-index: 1000;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .logo {
@@ -46,7 +46,8 @@
   font-size: 0.7rem;
   cursor: pointer;
 }
-.cta-button:hover{
+
+.cta-button:hover {
   box-shadow: 0 0 5px var(--gold);
   cursor: pointer;
   color: white;

@@ -2,7 +2,8 @@
 .why-container {
   position: relative;
   min-height: 100vh;
-  background-color: #050505; /* Deep rich black */
+  background-color: #050505;
+  /* Deep rich black */
   color: #ffffff;
   padding: 10rem 10%;
   display: flex;
@@ -164,7 +165,7 @@
   position: relative;
   width: 100%;
   height: 550px;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
   border-left: 1px solid rgba(197, 160, 89, 0.3);
 }
 
@@ -260,15 +261,15 @@
     grid-template-columns: 1fr;
     gap: 100px;
   }
-  
+
   .premium-h2 {
     font-size: 4rem;
   }
-  
+
   .visual-side {
     align-items: center;
   }
-  
+
   .data-glass {
     left: 20px;
   }

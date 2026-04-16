@@ -4,19 +4,19 @@ import '../styles/Hero.css';
 const videoSlides = [
   {
     id: 1,
-    url: 'assets/drone-shot-video.mp4',
+    url: `${process.env.PUBLIC_URL}/assets/drone-shot-video.mp4`,
     title: "American Dream Exterior",
     subtitle: "AERIAL DRONE CINEMATICS"
   },
   {
     id: 2,
-    url: 'assets/hero-video.mp4',
+    url: `${process.env.PUBLIC_URL}/assets/hero-video.mp4`,
     title: "DreamWorks Water Park",
     subtitle: "LARGEST INDOOR THEME PARK"
   },
   {
     id: 3,
-    url: 'assets/Avenue_Luxury_Court_Video.mp4',
+    url: `${process.env.PUBLIC_URL}/assets/Avenue_Luxury_Court_Video.mp4`,
     title: "The Avenue & Luxury Court",
     subtitle: "WORLD-CLASS RETAIL EXPERIENCE"
   }

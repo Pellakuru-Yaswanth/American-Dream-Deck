@@ -20,29 +20,60 @@
 }
 
 /* Placeholder gradients for logic - Replace with real background images/videos */
-.attractions-bg.nickelodeon { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-1.png');}
-.attractions-bg.dreamworks { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-2.png');}
-.attractions-bg.bigsnow { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-3.png'); }
-.attractions-bg.sealife { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-4.png'); }
-.attractions-bg.legoland { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-5.png');}
-.attractions-bg.therink { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../../public/assets/attraction-6.png'); }
+.attractions-bg.nickelodeon {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../../public/assets/attraction-1.png');
+}
 
-.attractions-bg.nickelodeon, .attractions-bg.dreamworks, .attractions-bg.bigsnow, .attractions-bg.sealife, .attractions-bg.legoland, .attractions-bg.therink {
-   width: 100%;
-   height: 100%;
-   animation: hideImage 3s linear;
-} 
+.attractions-bg.dreamworks {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../../public/assets/attraction-2.png');
+}
+
+.attractions-bg.bigsnow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../../public/assets/attraction-3.png');
+}
+
+.attractions-bg.sealife {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../../public/assets/attraction-4.png');
+}
+
+.attractions-bg.legoland {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../../public/assets/attraction-5.png');
+}
+
+.attractions-bg.therink {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../../public/assets/attraction-6.png');
+}
+
+.attractions-bg.nickelodeon,
+.attractions-bg.dreamworks,
+.attractions-bg.bigsnow,
+.attractions-bg.sealife,
+.attractions-bg.legoland,
+.attractions-bg.therink {
+  width: 100%;
+  height: 100%;
+  animation: hideImage 3s linear;
+}
 
 @media hideImage {
-  from {opacity: 0;};
-  to {opacity: 1;};
+  from {
+    opacity: 0;
+  }
+
+  ;
+
+  to {
+    opacity: 1;
+  }
+
+  ;
 }
 
 .vignette {
   position: absolute;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 200px rgba(0,0,0,0.9);
+  box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.9);
 }
 
 .attractions-ui {
@@ -95,11 +126,11 @@
 }
 
 .detail-card {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(20px);
   padding: 4rem;
   max-width: 450px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .detail-card h3 {
@@ -137,7 +168,7 @@
 .progress-container {
   width: 100%;
   height: 2px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   margin-bottom: 2rem;
   overflow: hidden;
 }
@@ -150,10 +181,19 @@
 }
 
 @keyframes loadProgress {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes fadeInEffect {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

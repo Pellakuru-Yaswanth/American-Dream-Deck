@@ -12,11 +12,13 @@
 
 .luxury-wrapper {
   display: grid;
-  grid-template-columns: 45% 55%; /* Give the grid slightly more room than the text */
+  grid-template-columns: 45% 55%;
+  /* Give the grid slightly more room than the text */
   gap: 2rem;
   z-index: 10;
   width: 100%;
-  max-width: 1600px; /* Optional: keeps the layout from getting too wide on huge monitors */
+  max-width: 1600px;
+  /* Optional: keeps the layout from getting too wide on huge monitors */
   margin: 0 auto;
 }
 
@@ -41,7 +43,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   max-width: 480px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 3.5rem;
   font-weight: 300;
 }
@@ -70,8 +72,13 @@
 }
 
 @keyframes marqueeScroll {
-  from { transform: translateX(-10%); }
-  to { transform: translateX(-255%); }
+  from {
+    transform: translateX(-10%);
+  }
+
+  to {
+    transform: translateX(-255%);
+  }
 }
 
 /* CTAs */
@@ -112,8 +119,10 @@
 .luxury-portfolio-grid {
   position: relative;
   height: 650px;
-  width: 100%; /* Ensure it fills the grid column */
-  min-width: 500px; /* Prevents cards from overlapping too much */
+  width: 100%;
+  /* Ensure it fills the grid column */
+  min-width: 500px;
+  /* Prevents cards from overlapping too much */
   display: flex;
   flex-wrap: wrap;
 }
@@ -132,7 +141,7 @@
   overflow: hidden;
   aspect-ratio: 4/5;
   filter: grayscale(30%);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card-image-wrapper img {
@@ -169,7 +178,7 @@
 .video-dimmer {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(0,0,0,0.5), #000 90%);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.5), #000 90%);
   z-index: 2;
 }
 

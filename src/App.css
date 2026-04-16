@@ -1,20 +1,124 @@
-/* Responsive Fixes */
+/* --- 1. LAPTOP & DESKTOP (Default - 1025px and above) --- */
+/* Your existing styles sit here. No changes needed. */
+
+
+/* --- 2. TABLET & SMALL LAPTOPS (Max-width: 1024px) --- */
 @media (max-width: 1024px) {
-  .why-content, .events-container {
-    grid-template-columns: 1fr; /* Stack columns */
+
+  /* Layout Adjustments */
+  .why-content,
+  .luxury-wrapper,
+  .events-grid {
+    grid-template-columns: 1fr;
+    /* Stack into a single column */
+    gap: 3rem;
+    padding: 6rem 5%;
+  }
+
+  /* Text Refinement */
+  .luxury-text-content,
+  .events-text-block {
+    text-align: center;
+    align-items: center;
+    order: 2;
+    /* Move text below the visual/image */
+  }
+
+  /* Image/Visual Scaling */
+  .luxury-portfolio-grid,
+  .contact-card {
+    order: 1;
+    /* Keep the "wow" factor at the top */
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Typography Pacing */
+  .hero-title,
+  .luxury-title,
+  .section-title-large {
+    font-size: clamp(3.5rem, 8vw, 5rem);
+    letter-spacing: -1px;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: none;
+    /* Hide standard links to favor the MenuOverlay index */
+  }
+}
+
+
+/* --- 3. MOBILE PHONES (Max-width: 600px) --- */
+@media (max-width: 600px) {
+
+  .luxury-container,
+  .events-section,
+  .why-container {
+    padding: 4rem 5%;
+  }
+
+  /* Extreme Typography Fix */
+  .hero-title,
+  .luxury-title,
+  .section-title-large {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+  .luxury-description,
+  .events-intro {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Portfolio Grid: Stack cards vertically instead of overlapping */
+  .luxury-portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    min-height: unset;
+  }
+
+  .portfolio-card {
+    position: relative !important;
+    /* Disable the absolute floating look */
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* Buttons */
+  .luxury-actions,
+  .luxury-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .luxury-cta-gold,
+  .submit-btn {
+    width: 100%;
     text-align: center;
   }
 
-  .image-side {
-    height: 400px;
-    order: -1; /* Move image to top on mobile */
+  /* Navbar Adjustments */
+  .navbar {
+    padding: 1rem 5%;
+    grid-template-columns: 1fr auto;
+    /* Simplify for mobile */
   }
 
-  .nav-links {
-    display: none; /* Hide desktop nav on small phones */
-  }
-
-  .hero-title {
-    font-size: 4rem;
+  .menu-text {
+    display: none;
+    /* Only show the hamburger icon on very small phones */
   }
 }
