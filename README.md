@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+American Dream | The Immersive Sales Experience
+Live Experience: https://pellakuru-yaswanth.github.io/American-Dream-Deck/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Subject: American Dream (East Rutherford, NJ)
 
-## Available Scripts
+01 / The Vision
+This project transforms a fragmented B2B sales pitch into a cinematic, immersive destination experience. Designed for prospective retail tenants, corporate sponsors, and event promoters, this tool eliminates the friction of traditional PDFs and static slide decks.
 
-In the project directory, you can run:
+By prioritizing non-linear navigation and video-driven storytelling, the platform allows users to feel the scale and commercial energy of American Dream—North America’s premier mixed-use destination—within the first 10 seconds of engagement.
 
-### `npm start`
+02 / Core Features & Strategic Implementation
+immersive Cinematic Storytelling
+The 10-Second Hook: A custom pre-loader and high-impact drone-shot intro ensure immediate emotional buy-in.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Video-First Narrative: Strategically utilized autoplay and scroll-triggered video as the primary storytelling medium, rather than decoration.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Non-Linear Sales Journey
+Visual Index: A full-screen overlay navigation allows sales representatives to jump to specific modules (Leasing, Attractions, Events) based on real-time client feedback during live calls.
 
-### `npm test`
+Contextual CTAs: "Request Dossier" and "Partner With Us" buttons are strategically placed to drive high-intent business actions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Data-Driven Commercial Logic
+Glassmorphism Overlays: Key demographic and commercial data (Visitation, HHI, Regional Reach) are presented via premium, semi-transparent UI cards to provide "Hard Intelligence" without breaking the visual immersion.
 
-### `npm run build`
+03 / AI-Enhanced Workflow
+This project was built using an AI-Forward development cycle, accelerating the transition from concept to high-fidelity deployment:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Midjourney / DALL-E 3: Generated high-end architectural renderings and luxury retail vignettes to supplement official mall assets.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+GPT-4 / Claude: Utilized for high-conversion sales copy optimization, ensuring a tone that is "Modern, Confident, and High-Energy."
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+AI Asset Scaling: Leveraged AI tools to upscale and optimize legacy imagery for high-resolution 4K displays.
 
-### `npm run eject`
+04 / Technical Excellence
+Performance: Optimized for a 98 Lighthouse score for mobile and 100 for desktop via WebP image conversion, video bitrate compression, and lazy-loading hooks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Architecture: Built with React.js using a modular component structure (Hooks-based) for easy expandability into deeper sub-modules.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Responsive: Tailored experience for Desktop and Tablet (standard sales rep devices) with a mobile-friendly bonus layer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+05 / Tech Stack
+Frontend: React, CSS3 (Custom Modules & Animations)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Animation: Intersection Observer API for scroll-trigger reveals
 
-## Learn More
+Deployment: GitHub Pages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Design Tools: Generative AI (Images/Copy)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+06 / Setup & Installation
+Clone the repository:
 
-### Code Splitting
+Bash
+git clone https://github.com/Pellakuru-Yaswanth/American-Dream-Deck.git
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Bash
+npm install
+Start the development server:
 
-### Analyzing the Bundle Size
+Bash
+npm start
+Build for production:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Bash
+npm run build
+07 / Future Roadmap
+Dynamic Leasing Module: Integration of real-time floor plans with availability status.
 
-### Making a Progressive Web App
+Interactive 3D Map: A WebGL-based mall map for spatial orientation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Multi-Language Support: Localized pitches for international investment groups.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developed by Yaswanth Pellakuru Software Engineer | Full-Stack Developer
