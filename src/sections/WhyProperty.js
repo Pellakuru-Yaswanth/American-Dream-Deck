@@ -8,7 +8,6 @@ const WhyProperty = () => {
 
       <div className="why-content">
         <div className="text-side">
-          <div className="badge">MARKET INTELLIGENCE 2026</div>
           <h2 className="premium-h2">
             The Economics of <br />
             <span className="outline-text">Prestige</span>
@@ -55,7 +54,7 @@ const WhyProperty = () => {
         <div className="visual-side">
           <div className="main-frame">
             <img 
-              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070" 
+              src={`${process.env.PUBLIC_URL}/assets/retail.png`}
               alt="Luxury Experience" 
               className="main-img"
             />

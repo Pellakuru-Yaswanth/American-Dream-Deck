@@ -1,25 +1,28 @@
-/* --- PRIMARY CONTAINER --- */
+/* WhyProperty.css */
+
+/* --- PRIMARY SLIDE CONTAINER --- */
 .why-container {
   position: relative;
-  min-height: 100vh;
-  background-color: #050505;
-  /* Deep rich black */
+  height: 100%; /* Important: Fills the 80vh deck container */
+  width: 100%;
+  background-color: #000;
   color: #ffffff;
-  padding: 10rem 10%;
+  padding: 3rem 6%; /* Tightened padding for the contained frame */
   display: flex;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
+  overflow-y: auto; /* Allows internal scrolling if the viewport is very small */
   font-family: 'Inter', sans-serif;
 }
 
-/* Subtle background grain or gold-tinted gradient */
+/* Subtle background gold glow */
 .why-bg-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(197, 160, 89, 0.08) 0%, transparent 60%);
+  background: radial-gradient(circle at 10% 20%, rgba(197, 160, 89, 0.05) 0%, transparent 50%);
   pointer-events: none;
   z-index: 1;
 }
@@ -27,31 +30,22 @@
 .why-content {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px;
+  gap: 50px;
   z-index: 2;
   width: 100%;
+  height: 100%;
+  margin: auto;
+  top: 0;
 }
 
-/* --- TEXT SIDE STYLING --- */
-.badge {
-  font-size: 0.65rem;
-  letter-spacing: 4px;
-  color: var(--gold);
-  border: 1px solid rgba(197, 160, 89, 0.4);
-  display: inline-block;
-  padding: 8px 20px;
-  margin-bottom: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
 .premium-h2 {
-  font-size: clamp(3rem, 5.5vw, 5.5rem);
-  line-height: 0.95;
+  font-size: clamp(2rem, 3.5vw, 3.8rem); /* Responsive title sizing */
+  line-height: 1;
   font-family: 'Playfair Display', serif;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 .outline-text {
@@ -60,15 +54,15 @@
 }
 
 .hero-description {
-  max-width: 500px;
-  font-size: 1.15rem;
-  line-height: 1.8;
+  max-width: 480px;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #b0b0b0;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero-description strong {
-  color: var(--white);
+  color: #fff;
   font-weight: 600;
 }
 
@@ -76,8 +70,8 @@
 .premium-stats-row {
   display: flex;
   align-items: flex-start;
-  gap: 50px;
-  margin-bottom: 4rem;
+  gap: 30px;
+  margin-bottom: 2.5rem;
 }
 
 .p-stat {
@@ -86,43 +80,43 @@
 }
 
 .p-value {
-  display: block;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 300;
-  color: var(--gold);
+  color: #c5a059;
   line-height: 1;
   margin-bottom: 5px;
 }
 
 .p-label {
-  font-size: 0.7rem;
-  letter-spacing: 2px;
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
   font-weight: 700;
-  opacity: 0.8;
+  opacity: 0.7;
   text-transform: uppercase;
 }
 
 .p-detail {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: #666;
-  margin-top: 8px;
-  max-width: 180px;
-  line-height: 1.4;
+  margin-top: 5px;
+  max-width: 150px;
 }
 
 .p-divider {
   width: 1px;
-  height: 80px;
+  height: 60px;
   background: rgba(255, 255, 255, 0.1);
   align-self: center;
 }
 
-/* --- PERFORMANCE TIERS (New Module) --- */
+/* --- PERFORMANCE TIERS --- */
 .performance-tiers {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 3rem;
+  padding-top: 1rem;
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
 
 .tier-box {
@@ -131,31 +125,29 @@
 
 .tier-title {
   display: block;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   letter-spacing: 2px;
-  color: var(--gold);
-  margin-bottom: 12px;
+  color: #c5a059;
+  margin-bottom: 8px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .tier-data {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  margin-bottom: 8px;
-  color: var(--white);
+  margin-bottom: 5px;
 }
 
 .tier-box p {
-  font-size: 0.75rem;
-  color: #777;
-  line-height: 1.5;
+  font-size: 0.7rem;
+  color: #666;
+  line-height: 1.4;
 }
 
-/* --- VISUAL SIDE (Images & Overlays) --- */
+/* --- VISUAL SIDE --- */
 .visual-side {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,8 +156,9 @@
 .main-frame {
   position: relative;
   width: 100%;
-  height: 550px;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+  height: 35vh; /* Responsive height based on viewport height */
+  min-height: 250px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
   border-left: 1px solid rgba(197, 160, 89, 0.3);
 }
 
@@ -173,33 +166,33 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(15%) contrast(105%);
+  filter: grayscale(10%) contrast(105%);
+  top:0;
 }
 
 .data-glass {
   position: absolute;
-  bottom: -30px;
-  left: -40px;
-  background: rgba(15, 15, 15, 0.9);
-  backdrop-filter: blur(25px);
-  padding: 35px;
+  bottom: -20px;
+  left: -20px;
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  width: 320px;
+  width: 260px;
   z-index: 5;
 }
 
 .data-glass h4 {
-  color: var(--gold);
-  letter-spacing: 3px;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
+  color: #c5a059;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
   font-weight: 800;
 }
 
 .data-glass p {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   opacity: 0.6;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .gold-progress-bar {
@@ -211,66 +204,51 @@
 .gold-progress-bar .fill {
   width: 98%;
   height: 100%;
-  background: var(--gold);
-  box-shadow: 0 0 10px rgba(197, 160, 89, 0.5);
+  background: #c5a059;
 }
 
-/* --- SECONDARY FRAME ELEMENTS --- */
+/* --- SECONDARY FRAME --- */
 .secondary-frame {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  margin-top: 40px;
+  text-align: right;
 }
 
 .insight-pill {
   display: inline-block;
   background: rgba(197, 160, 89, 0.05);
   border: 1px solid rgba(197, 160, 89, 0.2);
-  padding: 12px 24px;
-  font-size: 0.7rem;
+  padding: 10px 20px;
+  font-size: 0.65rem;
   color: #eee;
   border-radius: 100px;
-  margin-bottom: 25px;
-  letter-spacing: 0.5px;
-}
-
-.insight-pill strong {
-  color: var(--gold);
-  margin-right: 8px;
-  font-weight: 800;
+  margin-bottom: 15px;
 }
 
 .location-tag {
-  font-family: 'Courier New', Courier, monospace;
-  color: var(--gold);
-  font-size: 0.85rem;
-  margin-bottom: 5px;
+  font-family: 'Courier New', monospace;
+  color: #c5a059;
+  font-size: 0.75rem;
 }
 
 .sub-text {
-  font-size: 0.6rem;
-  letter-spacing: 4px;
+  font-size: 0.55rem;
+  letter-spacing: 3px;
   opacity: 0.3;
-  text-transform: uppercase;
 }
 
 /* --- RESPONSIVE ADJUSTMENTS --- */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .why-content {
     grid-template-columns: 1fr;
-    gap: 100px;
-  }
-
-  .premium-h2 {
-    font-size: 4rem;
+    gap: 30px;
   }
 
   .visual-side {
-    align-items: center;
+    order: -1; /* Move visual to top on mobile/tablet */
+    margin-bottom: 20px;
   }
 
-  .data-glass {
-    left: 20px;
+  .main-frame {
+    height: 25vh;
   }
 }

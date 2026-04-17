@@ -33,21 +33,12 @@ const Luxury = ({ onLeaseClick }) => {
             expression of retail prestige.
           </p>
 
-          <div className="luxury-brand-marquee">
-            <div className="marquee-content">
-              {[...brands, ...brands].map((brand, i) => (
-                <span key={i} className="marquee-item">{brand}</span>
-              ))}
-            </div>
-          </div>
-
-          <div className="luxury-actions">
-            <a onClick={onLeaseClick} className="luxury-cta-gold">
-              REQUEST DOSSIER
-            </a>
-            <a href={'assets/brochure.pdf'} download="American Dream User Guide.pdf" className="luxury-cta-gold">
-              USER GUIDE
-            </a>
+          <div className="brand-grid">
+            {brands.map((brand, i) => (
+              <div key={i} className="brand-item">
+                {brand}
+              </div>
+            ))}
           </div>
         </div>
 

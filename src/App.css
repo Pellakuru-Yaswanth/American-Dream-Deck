@@ -1,124 +1,87 @@
-/* --- 1. LAPTOP & DESKTOP (Default - 1025px and above) --- */
-/* Your existing styles sit here. No changes needed. */
-
-
-/* --- 2. TABLET & SMALL LAPTOPS (Max-width: 1024px) --- */
-@media (max-width: 1024px) {
-
-  /* Layout Adjustments */
-  .why-content,
-  .luxury-wrapper,
-  .events-grid {
-    grid-template-columns: 1fr;
-    /* Stack into a single column */
-    gap: 3rem;
-    padding: 6rem 5%;
-  }
-
-  /* Text Refinement */
-  .luxury-text-content,
-  .events-text-block {
-    text-align: center;
-    align-items: center;
-    order: 2;
-    /* Move text below the visual/image */
-  }
-
-  /* Image/Visual Scaling */
-  .luxury-portfolio-grid,
-  .contact-card {
-    order: 1;
-    /* Keep the "wow" factor at the top */
-    width: 100%;
-    min-width: unset;
-    height: auto;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Typography Pacing */
-  .hero-title,
-  .luxury-title,
-  .section-title-large {
-    font-size: clamp(3.5rem, 8vw, 5rem);
-    letter-spacing: -1px;
-  }
-
-  /* Navigation */
-  .nav-links {
-    display: none;
-    /* Hide standard links to favor the MenuOverlay index */
-  }
+/* --- Slide Engine Styles --- */
+.App{
+  height: 90vh;
+  width: 90vw;
+  background: #050505; /* Deep black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5vh;
+  overflow: hidden;
+}
+.slide-engine {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  position: relative;
 }
 
+.active-slide-wrapper {
+  height: 100%;
+  animation: slideFade 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
 
-/* --- 3. MOBILE PHONES (Max-width: 600px) --- */
-@media (max-width: 600px) {
+/* IMPORTANT: Force visibility of components that use reveal hooks */
+.active-slide-wrapper .reveal,
+.active-slide-wrapper .reveal-delayed {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
 
-  .luxury-container,
-  .events-section,
-  .why-container {
-    padding: 4rem 5%;
-  }
+@keyframes slideFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  /* Extreme Typography Fix */
-  .hero-title,
-  .luxury-title,
-  .section-title-large {
-    font-size: 2.8rem;
-    line-height: 1.1;
-    letter-spacing: -1px;
-  }
+/* --- Navigation Buttons --- */
+.deck-controls {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-  .luxury-description,
-  .events-intro {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
+.control-btn {
+  background: transparent;
+  border: 1px solid #c5a059;
+  color: #c5a059;
+  padding: 8px 15px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-  /* Portfolio Grid: Stack cards vertically instead of overlapping */
-  .luxury-portfolio-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: auto;
-    min-height: unset;
-  }
+.control-btn:hover:not(:disabled) {
+  background: #c5a059;
+  color: #000;
+}
 
-  .portfolio-card {
-    position: relative !important;
-    /* Disable the absolute floating look */
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
+.control-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #555;
+  color: #555;
+}
 
-  /* Buttons */
-  .luxury-actions,
-  .luxury-form {
-    flex-direction: column;
-    width: 100%;
-  }
+.slide-counter {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
 
-  .luxury-cta-gold,
-  .submit-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Navbar Adjustments */
-  .navbar {
-    padding: 1rem 5%;
-    grid-template-columns: 1fr auto;
-    /* Simplify for mobile */
-  }
-
-  .menu-text {
-    display: none;
-    /* Only show the hamburger icon on very small phones */
-  }
+.slide-counter span {
+  color: #c5a059;
+  font-weight: bold;
 }

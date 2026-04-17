@@ -1,74 +1,56 @@
-American Dream | The Immersive Sales Experience
-Live Experience: https://pellakuru-yaswanth.github.io/American-Dream-Deck/
+# American Dream | The Immersive Presentation Engine
 
-Subject: American Dream (East Rutherford, NJ)
+**Live Experience:** [https://pellakuru-yaswanth.github.io/American-Dream-Deck/](https://pellakuru-yaswanth.github.io/American-Dream-Deck/)  
+**Platform:** Custom-built Digital Sales Deck (SPA)
 
-01 / The Vision
-This project transforms a fragmented B2B sales pitch into a cinematic, immersive destination experience. Designed for prospective retail tenants, corporate sponsors, and event promoters, this tool eliminates the friction of traditional PDFs and static slide decks.
+## 01 / The Evolution: From Website to Deck
+In response to high-stakes B2B requirements, this project was engineered as a **Modular Sales Engine** rather than a traditional scrolling website. It mirrors the utility of platforms like *Digideck*, but with the high-fidelity performance of a custom React application. 
 
-By prioritizing non-linear navigation and video-driven storytelling, the platform allows users to feel the scale and commercial energy of American Dream—North America’s premier mixed-use destination—within the first 10 seconds of engagement.
+The UI is intentionally constrained to an **80% centered viewport frame**, creating a "theatrical stage" for data and visuals that remains consistent across all screen resolutions.
 
-02 / Core Features & Strategic Implementation
-immersive Cinematic Storytelling
-The 10-Second Hook: A custom pre-loader and high-impact drone-shot intro ensure immediate emotional buy-in.
+## 02 / Strategic Implementation
 
-Video-First Narrative: Strategically utilized autoplay and scroll-triggered video as the primary storytelling medium, rather than decoration.
+### Custom Slide-Engine Architecture
+* **Non-Linear Navigation:** Unlike a standard PowerPoint, this engine supports a hybrid flow. Users can use the **Visual Index** to jump to specific chapters or use the **Tactile Controls (NEXT/PREV)** to follow the narrative.
+* **Sub-Step Logical Nesting:** Implemented "nested" state logic for complex modules like *Attractions*. The deck requires the presenter to cycle through internal data points (e.g., Nickelodeon → DreamWorks) before advancing to the next primary slide, ensuring no key commercial facts are missed.
 
-Non-Linear Sales Journey
-Visual Index: A full-screen overlay navigation allows sales representatives to jump to specific modules (Leasing, Attractions, Events) based on real-time client feedback during live calls.
+### Data-Driven Commercial Storytelling
+* **The Economics of Prestige:** Shifted the focus from general descriptions to "Market Intelligence," using structured data grids and **Glassmorphism cards** to highlight KPIs like $1,200+ PSF and 40M annual visitation.
+* **Cinematic Backgrounds:** Utilized environment-aware asset pathing to deliver high-bitrate video backgrounds that stay locked behind the data layers, providing constant visual energy without distracting from the "Hard Intelligence."
 
-Contextual CTAs: "Request Dossier" and "Partner With Us" buttons are strategically placed to drive high-intent business actions.
+## 03 / AI-Enhanced Workflow
+Built using an **AI-Forward development cycle** to achieve "Agency-Level" polish in a 48-hour pivot:
+* **Gemini:** Created bespoke architectural vignettes and luxury retail environments to supplement official assets.
+* **GPT-4 / Gemini:** Leveraged for high-conversion sales copy, transforming technical specs into a "Modern, Confident, and High-Energy" pitch.
+* **Prompt Engineering:** Used AI to rapidly refactor the CSS architecture from a scrolling model to a viewport-locked "Deck" model.
 
-Data-Driven Commercial Logic
-Glassmorphism Overlays: Key demographic and commercial data (Visitation, HHI, Regional Reach) are presented via premium, semi-transparent UI cards to provide "Hard Intelligence" without breaking the visual immersion.
+## 04 / Technical Excellence
+* **Performance:** Achieved a **98+ Lighthouse Score** via aggressive asset optimization (WebP/bitrate-capped MP4) and non-blocking React hooks.
+* **State Management:** Lifted state to a central `Main.js` controller to synchronize the Navbar, Slide Counter, and internal sub-steps.
+* **Responsive Framing:** Uses Viewport Units (`vh`/`vw`) to maintain a perfect 80% presentation frame on everything from a 13" MacBook to a 4K boardroom display.
 
-03 / AI-Enhanced Workflow
-This project was built using an AI-Forward development cycle, accelerating the transition from concept to high-fidelity deployment:
+## 05 / Tech Stack
+* **Core:** React.js, CSS3 (Advanced Flex/Grid)
+* **Navigation:** Custom State-Managed Slide Controller
+* **Animations:** CSS Keyframes & Intersection Observer
+* **Deployment:** GitHub Pages (Environment-aware pathing)
 
-Midjourney / DALL-E 3: Generated high-end architectural renderings and luxury retail vignettes to supplement official mall assets.
-
-GPT-4 / Claude: Utilized for high-conversion sales copy optimization, ensuring a tone that is "Modern, Confident, and High-Energy."
-
-AI Asset Scaling: Leveraged AI tools to upscale and optimize legacy imagery for high-resolution 4K displays.
-
-04 / Technical Excellence
-Performance: Optimized for a 98 Lighthouse score for mobile and 100 for desktop via WebP image conversion, video bitrate compression, and lazy-loading hooks.
-
-Architecture: Built with React.js using a modular component structure (Hooks-based) for easy expandability into deeper sub-modules.
-
-Responsive: Tailored experience for Desktop and Tablet (standard sales rep devices) with a mobile-friendly bonus layer.
-
-05 / Tech Stack
-Frontend: React, CSS3 (Custom Modules & Animations)
-
-Animation: Intersection Observer API for scroll-trigger reveals
-
-Deployment: GitHub Pages
-
-Design Tools: Generative AI (Images/Copy)
-
-06 / Setup & Installation
-Clone the repository:
-
-Bash
+## 06 / Setup & Installation
+```bash
+# Clone the repository
 git clone https://github.com/Pellakuru-Yaswanth/American-Dream-Deck.git
-Install dependencies:
 
-Bash
+# Install dependencies
 npm install
-Start the development server:
 
-Bash
+# Run the Presentation Engine locally
 npm start
-Build for production:
+```
 
-Bash
-npm run build
-07 / Future Roadmap
-Dynamic Leasing Module: Integration of real-time floor plans with availability status.
+## 07 / Future Roadmap
+* **Live Leasing API:** Integration of real-time unit availability.
+* **Presentation Mode:** One-click full-screen toggle for distraction-free pitches.
+* **Analytics Layer:** Tracking "Slide Dwell Time" to see which attractions interest prospects most.
 
-Interactive 3D Map: A WebGL-based mall map for spatial orientation.
-
-Multi-Language Support: Localized pitches for international investment groups.
-
-Developed by Yaswanth Pellakuru Software Engineer | Full-Stack Developer
+---
+**Developed by Yaswanth Pellakuru** *Software Engineer | Full-Stack Developer*

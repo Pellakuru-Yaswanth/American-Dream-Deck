@@ -21,7 +21,7 @@ const videoSlides = [
     subtitle: "WORLD-CLASS RETAIL EXPERIENCE"
   }
 ];
-const Hero = ({ onExplore }) => {
+const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Function to go to next slide
@@ -50,7 +50,7 @@ const Hero = ({ onExplore }) => {
         className="video-slider"
       >
         <div className="video-slide" key={videoSlides[currentIndex].id}>
-          <video autoPlay muted loop playsInline className="hero-video">
+          <video autoPlay loop playsInline className="hero-video">
             <source src={videoSlides[currentIndex].url} type="video/mp4" />
           </video>
         </div>
@@ -65,7 +65,6 @@ const Hero = ({ onExplore }) => {
           <h1 className="hero-title fade-in-text" key={`title-${currentIndex}`}>
             {videoSlides[currentIndex].title}
           </h1>
-          <button className="explore-btn" onClick={onExplore}>BEGIN EXPLORATION</button>
         </div>
       </div>
 
