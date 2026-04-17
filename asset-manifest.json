@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/American-Dream-Deck/static/css/main.3c8cf171.css",
-    "main.js": "/American-Dream-Deck/static/js/main.cdd23fd2.js",
+    "main.css": "/American-Dream-Deck/static/css/main.26de0183.css",
+    "main.js": "/American-Dream-Deck/static/js/main.0efaac22.js",
     "static/media/attraction-1.png": "/American-Dream-Deck/static/media/attraction-1.2e20f749b44cba9286ff.png",
     "static/media/attraction-5.png": "/American-Dream-Deck/static/media/attraction-5.225be56da5a485b4a246.png",
     "static/media/attraction-2.png": "/American-Dream-Deck/static/media/attraction-2.df6068cdf47103d972dd.png",
@@ -9,11 +9,11 @@
     "static/media/attraction-3.png": "/American-Dream-Deck/static/media/attraction-3.68e1122e4d8808a8942c.png",
     "static/media/attraction-6.png": "/American-Dream-Deck/static/media/attraction-6.04da70d97013e91a482a.png",
     "index.html": "/American-Dream-Deck/index.html",
-    "main.3c8cf171.css.map": "/American-Dream-Deck/static/css/main.3c8cf171.css.map",
-    "main.cdd23fd2.js.map": "/American-Dream-Deck/static/js/main.cdd23fd2.js.map"
+    "main.26de0183.css.map": "/American-Dream-Deck/static/css/main.26de0183.css.map",
+    "main.0efaac22.js.map": "/American-Dream-Deck/static/js/main.0efaac22.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c8cf171.css",
-    "static/js/main.cdd23fd2.js"
+    "static/css/main.26de0183.css",
+    "static/js/main.0efaac22.js"
   ]
 }
