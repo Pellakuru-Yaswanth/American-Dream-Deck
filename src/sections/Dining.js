@@ -26,7 +26,7 @@ const Dining = () => {
 
         {/* Right Side: Informative Text */}
         <div className="dining-info">
-          <span className="section-label">05 / HOSPITALITY</span>
+          <span className="section-label">HOSPITALITY</span>
           <h2 className="premium-h2">Global <br />Palates</h2>
           <p className="dining-intro">
             From Michelin-starred excellence to casual family favorites, our culinary 

@@ -1,7 +1,17 @@
 import React from 'react';
 import '../styles/Loader.css';
+import { useState, useEffect } from 'react';
 
-const Loader = () => {
+const Loader = ({onStart}) => {
+  const [isFinished, setIsFinished] = useState(false);
+
+  useEffect(() => {
+    // Match this timer to your 3.5s animation
+    const timer = setTimeout(() => {
+      setIsFinished(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="loader-container">
       <div className="loader-content">
@@ -12,8 +22,16 @@ const Loader = () => {
           </div>
         </div>
         <div className="loader-footer">
-          <p>INITIALIZING IMMERSIVE DECK</p>
-          <span>EST. 2026</span>
+          {!isFinished ? (
+            <>
+              <p className="loading-text">INITIALIZING IMMERSIVE DECK</p>
+              <span>EST. 2026</span>
+            </>
+          ) : (
+            <button className="enter-btn fade-in" onClick={onStart}>
+              BEGIN EXPERIENCE
+            </button>
+          )}
         </div>
       </div>
     </div>

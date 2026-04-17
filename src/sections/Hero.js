@@ -50,7 +50,7 @@ const Hero = () => {
         className="video-slider"
       >
         <div className="video-slide" key={videoSlides[currentIndex].id}>
-          <video autoPlay loop playsInline className="hero-video">
+          <video autoPlay loop playsInline className="hero-video" preload='auto'>
             <source src={videoSlides[currentIndex].url} type="video/mp4" />
           </video>
         </div>

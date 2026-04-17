@@ -25,7 +25,7 @@ const Attractions = ({ activeIndex, setActiveIndex }) => {
 
       <div className="attractions-ui">
         <div className="attractions-sidebar">
-          <span className="section-label">03 / WORLD-CLASS ADVENTURE</span>
+          <span className="section-label">WORLD-CLASS ADVENTURE</span>
           <h2 className="premium-h2">The <br />Experience</h2>
           
           <div className="tab-menu">

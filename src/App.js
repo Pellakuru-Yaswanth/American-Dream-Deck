@@ -5,20 +5,9 @@ import './App.css';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // This simulates the time needed to load the high-res video assets
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3500);
-
-    return () => clearTimeout(timer);
-  }, []);
   
 
-  return ( 
-    <Main />
-  );
+  return ( isLoading ? <Loader onStart={() => setIsLoading(false)}/> : <Main />);
 }
 
 export default App;

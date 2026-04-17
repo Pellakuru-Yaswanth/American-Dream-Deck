@@ -26,7 +26,7 @@ const Events = () => {
           
           {/* 2. Left Side: Narrative and Capabilities Grid */}
           <div className="events-info-data">
-            <span className="section-label">04 / GLOBAL PLATFORM</span>
+            <span className="section-label">GLOBAL PLATFORM</span>
             <h2 className="premium-h2">Host Your <br />Next <span className="gold-text">Moment</span></h2>
             <p className="events-intro">
               From stadium-sized activations to intimate luxury launches, American Dream 
